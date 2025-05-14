@@ -1,5 +1,5 @@
 import streamlit as st
-from pss.app import initialize_app
+from src.pss.app import initialize_app
 
 if __name__ == "__main__":
     try:
