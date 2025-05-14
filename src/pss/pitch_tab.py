@@ -4,7 +4,7 @@ from mplsoccer import Pitch, VerticalPitch
 
 # Note: color_picker and download_figure are expected to be passed as arguments
 
-def render_pitch_tab(st, df=None, color_picker=None, download_figure=None, key_prefix=""):
+def show_pitch_tab(st, df=None, color_picker=None, download_figure=None, key_prefix=""):
     st.header("📐 Pitch Customization")
 
     # Initialize session state variables if they don't exist

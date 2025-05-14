@@ -5,6 +5,15 @@ from .table_tab import show_table_tab
 from .bar_tab import show_bar_tab
 from .radar_tab import show_radar_tab
 from .pizza_tab import show_pizza_tab
+from .data_loader import load_master_seasons, get_available_matches
+
+# Initialize session state
+if 'master_seasons' not in st.session_state:
+    st.session_state.master_seasons = load_master_seasons()
+if 'available_matches' not in st.session_state:
+    st.session_state.available_matches = get_available_matches()
+if 'saved_datasets' not in st.session_state:
+    st.session_state.saved_datasets = {}
 
 st.set_page_config(
     page_title="Football Analysis Dashboard",
