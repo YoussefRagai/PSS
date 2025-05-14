@@ -1,0 +1,5 @@
+*.msgpack filter=lfs diff=lfs merge=lfs -text
+*.parquet filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
+analysis/** filter=lfs diff=lfs merge=lfs -text
