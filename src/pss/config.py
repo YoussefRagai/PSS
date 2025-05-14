@@ -1,17 +1,16 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Get the directory where the executable is located
+BASE_DIR = Path(os.path.dirname(os.path.abspath(__file__))).parent.parent
 
-# Base paths - using environment variables with fallback to hardcoded paths
-DATA_PATH = os.getenv('DATA_PATH', "/Users/youssefragai/Desktop/Master/UI/master_seasons.msgpack")
-ANALYSIS_DATA_DIR = os.getenv('ANALYSIS_DATA_DIR', "/Users/youssefragai/Desktop/Master/UI/analysis")
+# Define paths relative to the executable location
+DATA_PATH = str(BASE_DIR / "master_seasons.msgpack")
+ANALYSIS_DATA_DIR = str(BASE_DIR / "analysis")
 
 def get_data_paths():
-    """Get the data paths."""
+    """Get the paths for data files."""
     return {
-        'master_seasons': DATA_PATH,
+        'data_path': DATA_PATH,
         'analysis_dir': ANALYSIS_DATA_DIR
     } 

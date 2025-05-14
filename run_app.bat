@@ -1,0 +1,3 @@
+@echo off
+echo Starting Football Analysis Dashboard...
+start "" "FootballAnalysis.exe" 
