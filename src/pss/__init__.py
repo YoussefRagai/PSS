@@ -1,0 +1,3 @@
+"""
+Football Analysis Dashboard package
+""" 

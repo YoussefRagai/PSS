@@ -1,10 +1,10 @@
 import streamlit as st
-from pitch_tab import show_pitch_tab
-from scatter_tab import show_scatter_tab
-from table_tab import show_table_tab
-from bar_tab import show_bar_tab
-from radar_tab import show_radar_tab
-from pizza_tab import show_pizza_tab
+from .pitch_tab import show_pitch_tab
+from .scatter_tab import show_scatter_tab
+from .table_tab import show_table_tab
+from .bar_tab import show_bar_tab
+from .radar_tab import show_radar_tab
+from .pizza_tab import show_pizza_tab
 
 st.set_page_config(
     page_title="Football Analysis Dashboard",

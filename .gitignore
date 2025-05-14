@@ -40,11 +40,16 @@ env/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Logs
+*.log
+
+# Keep data files but ignore temporary data files
+*.tmp
+*.temp
+*.bak
+
 # Data files
 *.msgpack
 *.parquet
 *.csv
-*.json
-
-# Logs
-*.log 
+*.json 
